@@ -25,6 +25,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'id',
             'page',
             'key',
+            'settingRus.index',
 
             ['class' => 'yii\grid\ActionColumn', 'template' => '{view} {update}'],
         ],

@@ -85,22 +85,24 @@ class EventController extends Controller
         if ($event->load(Yii::$app->request->post()) && $event_ru->load(Yii::$app->request->post()) && $event_en->load(Yii::$app->request->post())/* && Model::validateMultiple([$event, $event_ru, $event_en])*/) {
             $event->author_id = Yii::$app->user->identity->id;
 
-            $event->save();
+            if($event->save())
+            {
 
-            $this->uploadphoto(UploadedFile::getInstances($event, 'images'), $event->id);
+                $this->uploadphoto(UploadedFile::getInstances($event, 'images'), $event->id);
 
-            $event_ru->event_id = $event->id; 
-            $event_ru->publish_status = 0;
-            $event_ru->like = 0;
-            $event_ru->visited = 0;
+                $event_ru->event_id = $event->id; 
+                $event_ru->publish_status = 0;
+                $event_ru->like = 0;
+                $event_ru->visited = 0;
 
-            $event_en->event_id = $event->id; 
-            $event_en->publish_status = 0;
-            $event_en->like = 0;
-            $event_en->visited = 0;
+                $event_en->event_id = $event->id; 
+                $event_en->publish_status = 0;
+                $event_en->like = 0;
+                $event_en->visited = 0;
 
-            $event_ru->save(); 
-            $event_en->save(); 
+                $event_ru->save(); 
+                $event_en->save(); 
+            }
 
             return $this->redirect(['update', 'id' => $event->id]);
         } else {
@@ -150,12 +152,13 @@ class EventController extends Controller
         if ($event->load(Yii::$app->request->post()) && $event_ru->load(Yii::$app->request->post()) && $event_en->load(Yii::$app->request->post())/* && Model::validateMultiple([$event, $event_ru, $event_en])*/) {
             $event->author_id = Yii::$app->user->identity->id;
 
-            $event->save();
+            if ($event->save())
+            {
+                $this->uploadphoto(UploadedFile::getInstances($event, 'images'), $event->id);
 
-            $this->uploadphoto(UploadedFile::getInstances($event, 'images'), $event->id);
-
-            $event_ru->save(); 
-            $event_en->save(); 
+                $event_ru->save(); 
+                $event_en->save(); 
+            }
 
             return $this->redirect(['update', 'id' => $event->id]);
         } else {

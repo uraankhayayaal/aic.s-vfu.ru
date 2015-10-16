@@ -114,23 +114,23 @@ class ArticleController extends Controller
             $article->author_id = Yii::$app->user->identity->id;
             $article->date_time = date("Y-m-d H:i:s");
 
-            $article->save();
+            if( $article->save() )
+            {
+                $this->uploadphoto(UploadedFile::getInstances($article, 'images'), $article->id);
 
-            $this->uploadphoto(UploadedFile::getInstances($article, 'images'), $article->id);
+                $article_ru->article_id = $article->id; 
+                $article_ru->publish_status = 0;
+                $article_ru->like = 0;
+                $article_ru->visited = 0;
 
-            $article_ru->article_id = $article->id; 
-            $article_ru->publish_status = 0;
-            $article_ru->like = 0;
-            $article_ru->visited = 0;
+                $article_en->article_id = $article->id; 
+                $article_en->publish_status = 0;
+                $article_en->like = 0;
+                $article_en->visited = 0;
 
-            $article_en->article_id = $article->id; 
-            $article_en->publish_status = 0;
-            $article_en->like = 0;
-            $article_en->visited = 0;
-
-            $article_ru->save(); 
-            $article_en->save(); 
-
+                $article_ru->save(); 
+                $article_en->save(); 
+            }
             return $this->redirect(['update', 'id' => $article->id]);
         } else {
             return $this->render('create', [
@@ -177,13 +177,13 @@ class ArticleController extends Controller
         ]);
 
         if ($article->load(Yii::$app->request->post()) && $article_ru->load(Yii::$app->request->post()) && $article_en->load(Yii::$app->request->post())/* && Model::validateMultiple([$article, $article_ru, $article_en])*/) {
-            $article->save();
+            if( $article->save() )
+            {
+                $this->uploadphoto(UploadedFile::getInstances($article, 'images'), $article->id);
 
-            $this->uploadphoto(UploadedFile::getInstances($article, 'images'), $article->id);
-
-            $article_ru->save(); 
-            $article_en->save(); 
-
+                $article_ru->save(); 
+                $article_en->save(); 
+            }
             return $this->redirect(['update', 'id' => $article->id]);
         } else {
             return $this->render('update', [

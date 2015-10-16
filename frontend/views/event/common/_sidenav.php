@@ -12,7 +12,7 @@ use yii\web\Session;
         echo Menu::widget([
             'items' => [
                 ['label' => 'НОВОСТИ', 'url' => ['article/index'], 'active'=>\Yii::$app->controller->id == 'article'],
-                ['label' => 'МЕРОПРИЯТИЯ', 'url' => ['event/index'], 'active'=>\Yii::$app->controller->id == 'event'],
+                ['label' => 'АКТИВНЫЕ МЕРОПРИЯТИЯ', 'url' => ['event/index'], 'active'=>\Yii::$app->controller->id == 'event'],
             ],
         ]);
         break;
@@ -20,7 +20,7 @@ use yii\web\Session;
         echo Menu::widget([
             'items' => [
                 ['label' => 'NEWS', 'url' => ['article/index'], 'active'=>\Yii::$app->controller->id == 'article'],
-                ['label' => 'EVENTS', 'url' => ['event/index'], 'active'=>\Yii::$app->controller->id == 'event'],
+                ['label' => 'ACTUAL EVENTS', 'url' => ['event/index'], 'active'=>\Yii::$app->controller->id == 'event'],
             ],
         ]);
         break;
