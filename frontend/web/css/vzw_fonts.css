@@ -1,0 +1,24 @@
+@charset "UTF-8";@font-face{font-family:"HelveticaLight";src:url('fonts/HelveticaLight.eot?#iefix') format('embedded-opentype'),url('fonts/HelveticaLight.woff') format('woff'),url('fonts/HelveticaLight.ttf') format('truetype'),url('fonts/HelveticaLight.eot') format('embedded-opentype'),font-weight:normal;font-style:normal;}
+@font-face{font-family:"HelveticaLightItalic";src:url('fonts/Helveticalightitalic.eot?#iefix') format('embedded-opentype'),url('fonts/Helveticalightitalic.woff') format('woff'),url('fonts/Helveticalightitalic.ttf') format('truetype'),url('fonts/Helveticalightitalic.eot') format('embedded-opentype');font-weight:normal;font-style:normal;}
+@font-face{font-family:"HelveticaBook";src:url('fonts/HelveticaThin.eot?#iefix') format('embedded-opentype'),url('fonts/HelveticaThin.woff') format('woff'),url('fonts/HelveticaThin.ttf') format('truetype'),url('fonts/HelveticaThin.eot') format('embedded-opentype');font-weight:normal;font-style:normal;}
+@font-face{font-family:"HelveticaBookItalic";src:url('fonts/HelveticaThinitalic.eot?#iefix') format('embedded-opentype'),url('fonts/HelveticaThinitalic.woff') format('woff'),url('fonts/HelveticaThinitalic.ttf') format('truetype'),url('fonts/HelveticaThinitalic.eot') format('embedded-opentype');font-weight:normal;font-style:normal;}
+@font-face{font-family:'HelveticaMedium';src:url('fonts/Helveticamedium.eot?#iefix') format('embedded-opentype'),url('fonts/Helveticamedium.woff') format('woff'),url('fonts/Helveticamedium.ttf') format('truetype'),url('fonts/Helveticamedium.eot') format('embedded-opentype');font-weight:normal;font-style:normal;}
+@font-face{font-family:'HelveticaMediumItalic';src:url('fonts/Helveticamediumitalic.ttf') format('truetype'),url('fonts/Helveticamediumitalic.svg') format('svg'),url('fonts/Helveticamediumitalic.eot') format('embedded-opentype'),url('fonts/Helveticamediumitalic.woff') format('woff'),url('fonts/Helveticamediumitalic.eot?#iefix') format('embedded-opentype');font-weight:normal;font-style:normal;}
+@font-face{font-family:'HelveticaBold';src:url('fonts/Helveticabold.eot?#iefix') format('embedded-opentype'),url('fonts/Helveticabold.woff') format('woff'),url('fonts/Helveticabold.ttf') format('truetype'),url('fonts/Helveticabold.eot') format('embedded-opentype');font-weight:normal;font-style:normal;}
+@font-face{font-family:'HelveticaBoldItalic';src:url('fonts/Helveticabolditalic.eot?#iefix') format('embedded-opentype'),url('fonts/Helveticabolditalic.woff') format('woff'),url('fonts/Helveticabolditalic.ttf') format('truetype'),url('fonts/Helveticabolditalic.eot') format('embedded-opentype');font-weight:normal;font-style:normal;}
+@font-face{font-family:'icons';src:url('fonts/icons.eot');src:url('fonts/icons.eot?#iefix') format('embedded-opentype'),url('fonts/icons.woff') format('woff'),url('fonts/icons.ttf') format('truetype');font-weight:normal;font-style:normal;}
+.icons,[class^="icon-"],[class*=" icon-"]{font-family:'icons';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+.icon-vic_icons-07:before{.icon-vic_icons-01:before{content:"\65";}
+.icon-vic_icons-02:before{content:"\69";}
+.icon-vic_icons-03 .path1:before{content:"\62";color:#4081b8;}
+.icon-vic_icons-03 .path2:before{content:"\63";margin-left:-0.99511719em;color:#000;}
+.icon-vic_icons-04:before{content:"\66";}
+.icon-vic_icons-05:before{content:"\6a";}
+.icon-vic_icons-06:before{content:"\73";}
+.icon-vic_icons-07:before{content:"\61";}
+.icon-vic_icons-08:before{content:"\64";}
+.icon-vic_icons-09:before{content:"\67";}
+.icon-vic_icons-10:before{content:"\68";}
+.icon-vic_icons-11:before{content:"\6b";}
+.icon-vic_icons-12:before{content:"\6c";}
+.icon-vic_icons-13:before{content:"\70";}
