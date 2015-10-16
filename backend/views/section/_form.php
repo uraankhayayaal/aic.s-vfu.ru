@@ -30,6 +30,7 @@ use yii\widgets\ActiveForm;
     <?php $form = ActiveForm::begin([
         'options' => ['enctype'=>'multipart/form-data', 'onsubmit' => 'setFormSubmitting()']
     ]); ?>
+    <input type="hidden" name="_csrf" value="<?=Yii::$app->request->getCsrfToken()?>" />
     <div class="col-md-6">
         <h3>Русский</h3>
         <?= $form->field($section_ru, 'section_name')->textInput(['maxlength' => true, 'class' => 'ntSaveForms form-control']) ?>

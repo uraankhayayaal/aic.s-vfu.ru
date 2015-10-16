@@ -16,7 +16,7 @@ class OrehController extends \yii\web\Controller
                 //Yii::$app->session->setFlash('error', 'There was an error sending email.');
             }
 
-            return $this->render('//order/thank');
+            return $this->render('/order/thank');
         } else {
             return $this->render('index', [
                 'model' => $model,

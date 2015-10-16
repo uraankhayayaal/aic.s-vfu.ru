@@ -39,7 +39,7 @@ class ArticleController extends Controller
     {
     
         return $this->render('index', [
-            'model' => article::find()->all(),
+            'model' => article::find()->orderBy('date_time DESC')->all(),
         ]);
     }
 

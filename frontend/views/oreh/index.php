@@ -4,6 +4,26 @@ use yii\bootstrap\ActiveForm;
 use yii\captcha\Captcha;
 
 ?>
+<script>
+function getQueryVariable(variable)
+{
+       var query = window.location.search.substring(1);
+       var vars = query.split("&");
+       for (var i=0;i<vars.length;i++) {
+               var pair = vars[i].split("=");
+               if(pair[0] == variable){return pair[1];}
+       }
+       return(false);
+}
+
+$( document ).ready(function() {
+    if( getQueryVariable("scroll") == "true_scroll"){
+        $('html, body').animate({
+            scrollTop: $("#elementtoScrollToID").offset().top
+        }, 2000);
+    };    
+});
+</script>
 <section class="row">
     <div class="mox-center mox-content">
         <div class="text page-header parbase">
@@ -12,7 +32,7 @@ use yii\captcha\Captcha;
 				<div class="col-4 mox-padd-20-vcenter">
 					<img src="<?= Yii::getAlias('@resource/img/oreh.png') ?>" alt="oreh" width="35%">
 				</div>
-				<h3 class="mox-center">«Oreh» – по замыслу, орешки, находящиеся внутри кедровой шишки, символизируют резидентов бизнес-инкубатора и их единство.</h3>
+				<h3 class="mox-center">По замыслу, орешки, находящиеся внутри кедровой шишки, символизируют резидентов бизнес-инкубатора и их единство.</h3>
             </div>
         </div>
     </div>
@@ -23,18 +43,18 @@ use yii\captcha\Captcha;
     <div class="mox-center mox-content">
         <div class="text parbase">
             <div class="vic-text">
-				<h3 class="head2 pad-med">БИЗНЕС-ИНКУБАТОР...</h3>
+				<h3 class="head2 pad-med">БИЗНЕС-ИНКУБАТОР ДЛЯ СТУДЕНТОВ</h3>
 				<div class="col-4 align-top pad-med">
 					<img class="resident" src="<?= Yii::getAlias('@resource/img/tie.png') ?>" alt="oreh">
-					<h3 class="mox-center">Предоставляет помещение или рабочее место по льготной цене</h3>
+					<h3 class="mox-center"><span style="font-size:1.5rem;">Предоставляет</span> помещение или рабочее место по льготной цене</h3>
 				</div>
 				<div class="col-4 align-top pad-med">
 					<img src="<?= Yii::getAlias('@resource/img/students.png') ?>" alt="oreh">
-					<h3 class="mox-center">Информирует о проводимых конкурсах и грантах</h3>
+					<h3 class="mox-center"><span style="font-size:1.5rem;">Информирует</span> о проводимых конкурсах и грантах</h3>
 				</div>
 				<div class="col-4 align-top pad-med">
 					<img src="<?= Yii::getAlias('@resource/img/community.png') ?>" alt="oreh">
-					<h3 class="mox-center">Помогает в заполении заявок на гранты и конкурсы</h3>
+					<h3 class="mox-center"><span style="font-size:1.5rem;">Помогает</span> в заполении заявок на гранты и конкурсы</h3>
 				</div>
 				
             </div>
@@ -282,7 +302,7 @@ use yii\captcha\Captcha;
 					<div class="row">
 						<div class="col-12">
 							<div class="col-4 mox-padd-20-vcenter">
-								<img src="<?= Yii::getAlias('@resource/img/dost_oreh.jpg') ?>" alt="oreh" width="100%">
+								<img src="<?= Yii::getAlias('@resource/img/dost_oreh.png') ?>" alt="oreh" width="100%">
 							</div>
 							<div class="col-8 mox-padd-20-vcenter">
 								<p class="mox-justify">В июле 2015 г. была открыта первая в России студенческая венчурная компания «Oreh ventures», которая не имеет аналогов по всей стране. Организация, курируемая самими студентами, создана для финансирования лучших инновационных и экономически привлекательных студенческих проектов.</p>
@@ -343,7 +363,7 @@ use yii\captcha\Captcha;
 	</div>
 </section>
 
-<section class="row patt-4">
+<section class="row patt-4" id="elementtoScrollToID">
     <div class=" mox-content">
         <div class="text parbase">
             <div class="vic-text">
@@ -354,6 +374,7 @@ use yii\captcha\Captcha;
 			            <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
 			                <?= $form->field($model, 'name') ?>
 			                <?= $form->field($model, 'email') ?>
+			                <?= $form->field($model, 'phone') ?>
 			                <?= $form->field($model, 'subject') ?>
 			                <?= $form->field($model, 'body')->textArea(['rows' => 6]) ?>
 			                <div class="form-group">

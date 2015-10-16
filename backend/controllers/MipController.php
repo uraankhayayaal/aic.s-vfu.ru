@@ -36,7 +36,7 @@ class MipController extends Controller
      */
     public function actionIndex()
     {
-        $mips = mip::find()->all();
+        $mips = mip::find()->orderBy('id DESC')->all();
 
         return $this->render('index', [
             'mips' => $mips,

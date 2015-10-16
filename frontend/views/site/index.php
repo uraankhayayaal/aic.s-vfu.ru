@@ -9,6 +9,7 @@ $this->title = 'AIC NEFU in Yakutsk';
 
 use yii\helpers\Url;
 ?>
+
 <section class="row-grey">
     <div class="mox-center mox-content">
         <div class="text page-header parbase">

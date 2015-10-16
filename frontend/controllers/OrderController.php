@@ -31,6 +31,7 @@ class OrderController extends Controller
         $model = new Order();
 
         $model->send_at = date("Y-m-d H:i:s");
+        $model->is_new = 0;
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->render('thank');

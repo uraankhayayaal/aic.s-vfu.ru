@@ -12,6 +12,7 @@ class ContactForm extends Model
 {
     public $name;
     public $email;
+    public $phone;
     public $subject;
     public $body;
     public $ok;
@@ -24,7 +25,7 @@ class ContactForm extends Model
     {
         return [
             // name, email, subject and body are required
-            [['name', 'email', 'subject', 'body'], 'required'],
+            [['name', 'email', 'phone', 'subject', 'body'], 'required'],
             // email has to be a valid email address
             ['email', 'email'],
             ['ok', 'string']
@@ -42,16 +43,18 @@ class ContactForm extends Model
             //'verifyCode' => 'Verification Code',
             'name' => 'Имя',
             'email' => 'Электронная почта',
-            'subject' => 'Вопрос',
-            'body' => 'Сообщение',
+            'phone' => 'Телефон',
+            'subject' => 'Где учишься?',
+            'body' => 'Кратко опиши свою идею',
             'ok' => 'Отправить',
         ];
         if(Yii::$app->language == 'en') return [
             //'verifyCode' => 'Verification Code',
             'name' => 'name',
             'email' => 'email',
-            'subject' => 'subject',
-            'body' => 'body',
+            'phone' => 'phone',
+            'subject' => 'What faculty are you from?',
+            'body' => 'What is your Idie?',
             'ok' => 'Send',
         ];
     }
@@ -68,7 +71,7 @@ class ContactForm extends Model
             ->setTo($email)
             ->setFrom([$this->email => $this->name])
             ->setSubject($this->subject)
-            ->setTextBody($this->body)
+            ->setTextBody($this->body.'<br>'.$this->phone)
             ->send();
     }
 }

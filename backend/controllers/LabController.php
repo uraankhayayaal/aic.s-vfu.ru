@@ -36,7 +36,7 @@ class LabController extends Controller
      */
     public function actionIndex()
     {
-        $labs = lab::find()->all();
+        $labs = lab::find()->orderBy('id DESC')->all();
 
         return $this->render('index', [
             'labs' => $labs,

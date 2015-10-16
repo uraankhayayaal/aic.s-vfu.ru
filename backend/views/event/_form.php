@@ -34,6 +34,7 @@ use yii\helpers\Url;
     <?php $form = ActiveForm::begin([
         'options' => ['enctype'=>'multipart/form-data', 'onsubmit' => 'setFormSubmitting()']
     ]); ?>
+    <input type="hidden" name="_csrf" value="<?=Yii::$app->request->getCsrfToken()?>" />
     <div class="col-md-6">
         <h3>Русский</h3>
         <?= $form->field($event_ru, 'title')->textInput(['maxlength' => true, 'class' => 'ntSaveForms form-control']) ?>

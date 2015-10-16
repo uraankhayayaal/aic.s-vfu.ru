@@ -11,6 +11,7 @@ use yii\widgets\ActiveForm;
 <div class="setting-form row">
 
     <?php $form = ActiveForm::begin(); ?>
+    <input type="hidden" name="_csrf" value="<?=Yii::$app->request->getCsrfToken()?>" />
     <div class="col-md-12">
     <?= $form->field($Setting, 'page')->textInput(['maxlength' => true, 'class' => 'ntSaveForms form-control']) ?>
     </div>

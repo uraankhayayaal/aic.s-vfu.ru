@@ -21,7 +21,7 @@ use Yii;
 class Order extends \yii\db\ActiveRecord
 {
     public $question = array(
-        array('Создание МИП', 'Вопросы по существующим МИП-ам', 'Документация', 'Юридическая помощь', 'Вопросы по недвижимости', 'Конкурсы и гранты', 'Международное сотрудничество'), 
+        array('Создание МИП', 'Вопросы по существующим МИП-ам', 'Документация', 'Юридическая помощь', 'Вопросы по недвижимости', 'Конкурсы и гранты', 'Международное сотрудничество', 'Студенческий бизнес-инкубатор "Орех"', 'Центр Интеллектуальной собственности', 'Вопросы руководству'), 
         array('Сreate a innovative company', 'About actual innovative company', 'Documentation')
     );
     /**
@@ -39,7 +39,7 @@ class Order extends \yii\db\ActiveRecord
     {
         return [
             [['first_name', 'email', 'send_at'], 'required'],
-            [['send_at'], 'safe'],
+            //[['send_at'], 'safe'],
             [['first_name', 'last_name', 'email', 'phone', 'text', 'type'], 'string', 'max' => 255]
         ];
     }

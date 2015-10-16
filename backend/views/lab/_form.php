@@ -34,7 +34,7 @@ use kartik\datetime\DateTimePicker;
     <?php $form = ActiveForm::begin([
         'options' => ['enctype'=>'multipart/form-data', 'onsubmit' => 'setFormSubmitting()']
     ]); ?>
-    
+    <input type="hidden" name="_csrf" value="<?=Yii::$app->request->getCsrfToken()?>" />
 
     <div class="col-md-6">
         <h3>Русский</h3>

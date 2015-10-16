@@ -39,7 +39,7 @@ class EventController extends Controller
     public function actionIndex()
     {
         return $this->render('index', [
-            'model' => Event::find()->all(),
+            'model' => Event::find()->orderBy('start_timedate DESC')->all(),
         ]);
     }
     /*

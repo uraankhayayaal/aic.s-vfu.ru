@@ -22,21 +22,21 @@ $this->title = 'Who we are';
                             <table>
                              <tr><th class="mox-center"><p>Саввин Афанасий<br>Афанасьевич </p></th></tr>
                                  <tr><img src="<?= Yii::getAlias('@resource/people/10.png') ?>" width="100%" alt="WHA"></tr>
-                                 <tr><td class="mox-left"><div class="my_word"><i>"Только смелым покоряются моря!"</i></div><p> Должность: Проректор по ИР и КНР, директор АИЦ</p></td></tr>
+                                 <tr><td class="mox-left"><div class="my_word"><i>"Только смелым покоряются моря"</i></div><p> Должность: Проректор по ИР и КНР, директор АИЦ</p></td></tr>
                              </table>
                         </div>
                         <div class="col-4 mox-padd-20">
                             <table>
                                  <tr><th class="mox-center"><p>Готовцев Эдуард<br>Иннокентьевич<br> </p></th></tr>
                                  <tr><img src="<?= Yii::getAlias('@resource/people/1.png') ?>" width="100%" alt="WHA"></tr>
-                                 <tr><td class="mox-left"><div class="my_word"><i>"Дорога в тысячу миль начинается с первого шага"</i></div><p>Должность: Директор ЦМИиУП</p></td></tr>
+                                 <tr><td class="mox-left"><div class="my_word"><i>"Дорога в тысячу миль начинается с первого шага"</i></div><p>Должность: Замиститель директора АИЦ - Директор ЦМИиУП</p></td></tr>
                              </table>
                         </div>
                         <div class="col-4 mox-padd-20">
                             <table>
                                  <tr><th class="mox-center"><p>Винокуров Афанасий<br>Афанасьевич </p></th></tr>
                                  <tr><img src="<?= Yii::getAlias('@resource/people/4.png') ?>" width="100%" alt="WHA"></tr>
-                                 <tr><td class="mox-left"><p> Должность: Директор ЦИСиЮСИД</p></td></tr>
+                                 <tr><td class="mox-left"><div class="my_word"><i>"У нас есть все, что необходимо, но это только возможность, которую еще нужно реализовать" (Хазрат Хан)</i></div><p> Должность: Замиститель директора АИЦ - Директор ЦИСиЮСИД</p></td></tr>
                              </table>
                         </div>
                     </div>  
@@ -78,7 +78,7 @@ $this->title = 'Who we are';
                             <table>
                                 <tr><th class="mox-center"><p>Архипова Алена<br>Николаевна</p></th></tr>
                                  <tr><img src="<?= Yii::getAlias('@resource/people/11.png') ?>" width="100%" alt="WHA"></tr>
-                                 <tr><td class="mox-left"><div class="my_word"><i>"Всё что ни делается - всё к лучшему!"</i></div><p>Должность: Ведущий специалист</p></td></tr>
+                                 <tr><td class="mox-left"><div class="my_word"><i>"Всё что ни делается - всё к лучшему"</i></div><p>Должность: Ведущий специалист</p></td></tr>
                              </table>
                         </div>
                     </div>
@@ -94,7 +94,7 @@ $this->title = 'Who we are';
                             <table>
                                  <tr><th class="mox-center"><p>Каплин Айаал<br>Милентьевич</p></th></tr>
                                  <tr><img src="<?= Yii::getAlias('@resource/people/15.png') ?>" width="100%" alt="WHA"></tr>
-                                 <tr><td class="mox-left"><div class="my_word"><i>"Все можно сделать лучше, чем делалось до сих пор."</i></div><p>Должность: Ведущий специалист</p></td></tr>
+                                 <tr><td class="mox-left"><div class="my_word"><i>"Все можно сделать лучше, чем делалось до сих пор"</i></div><p>Должность: Ведущий специалист</p></td></tr>
                              </table>
                         </div>
                         <div class="col-4 mox-padd-20">
@@ -141,7 +141,7 @@ $this->title = 'Who we are';
                             <table>
                                  <tr><th class="mox-center"><p>Алексеева Лидия<br>Сергеевна</p></th></tr>
                                  <tr><img src="<?= Yii::getAlias('@resource/people/2.png') ?>" width="100%" alt="WHA"></tr>
-                                 <tr><td class="mox-left"><div class="my_word"><i>"Боишься не делай! Сделал - не бойся..."</i></div><p>Должность: Главный специалист</p></td></tr>
+                                 <tr><td class="mox-left"><div class="my_word"><i>"Боишься не делай! Сделал - не бойся"</i></div><p>Должность: Главный специалист</p></td></tr>
                              </table>
                         </div>
                         <div class="col-4 mox-padd-20">
@@ -161,14 +161,14 @@ $this->title = 'Who we are';
                             <table>
                                  <tr><th class="mox-center"><p>Лавров Фрументий<br>Фрументьевич</p></th></tr>
                                  <tr><img src="<?= Yii::getAlias('@resource/people/6.png') ?>" width="100%" alt="WHA"></tr>
-                                 <tr><td class="mox-left"><p>Должность: Ведущий научный сотрудник</p></td></tr>
+                                 <tr><td class="mox-left"><div class="my_word"><i>"В любой науке, в любом искусстве лучший учитель — опыт" (Мигель де Сервантес)</i></div><p>Должность: Ведущий научный сотрудник</p></td></tr>
                              </table>
                         </div>
                         <div class="col-4 mox-padd-20">
                             <table>
-                                 <tr><th class="mox-center"><p>Сыроватский Виталий Николаевич</p></th></tr>
+                                 <tr><th class="mox-center"><p>Сыроватский Виталий Степанович</p></th></tr>
                                  <tr><img src="<?= Yii::getAlias('@resource/people/7.png') ?>" width="100%" alt="WHA"></tr>
-                                 <tr><td class="mox-left"><div class="my_word"><i>Искусство обучения есть искусство будить в юных душах любознательность и затем удовлетворять ее..</i></div><p>Должность: Ведущий научный сотрудник</p></td></tr>
+                                 <tr><td class="mox-left"><div class="my_word"><i>"Искусство обучения есть искусство будить в юных душах любознательность и затем удовлетворять ее"</i></div><p>Должность: Ведущий научный сотрудник</p></td></tr>
                              </table>
                         </div>
                         <div class="col-4 mox-padd-20">
@@ -218,7 +218,7 @@ $this->title = 'Who we are';
                             <table>
                                  <tr><th class="mox-center"><p>Тихонова Динара<br> Адаевна</p></th></tr>
                                  <tr><img src="<?= Yii::getAlias('@resource/people/0.png') ?>" width="100%" alt="WHA"></tr>
-                                 <tr><td class="mox-left"><p>Харбинский политехнический университет(Harbin Institute of Technology)</p></td></tr>
+                                 <tr><td class="mox-left"><p>Харбинский политехнический университет (Harbin Institute of Technology)</p></td></tr>
                              </table>
                         </div>
                         <div class="col-4 mox-padd-20">
