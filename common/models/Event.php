@@ -41,7 +41,7 @@ class Event extends \yii\db\ActiveRecord
             [['author_id'], 'integer'],
             [['start_timedate', 'end_timedate'], 'safe'],
             [['place'], 'string', 'max' => 255],
-            [['images'], 'image', 'skipOnEmpty' => true, 'extensions' => 'png, jpg', 'maxFiles' => 10],
+            [['images'], 'image', 'skipOnEmpty' => true, 'extensions' => 'png, jpg', 'maxFiles' => 3],
         ];
     }
 

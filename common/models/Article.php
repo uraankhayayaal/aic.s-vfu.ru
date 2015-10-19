@@ -39,7 +39,7 @@ class Article extends \yii\db\ActiveRecord
             [['date_time', 'author_id'], 'required'],
             [['date_time'], 'safe'],
             [['author_id'], 'integer'],
-            [['images'], 'image', 'skipOnEmpty' => true, 'extensions' => 'png, jpg', 'maxFiles' => 10],
+            [['images'], 'image', 'skipOnEmpty' => true, 'extensions' => 'png, jpg', 'maxFiles' => 3],
         ];
     }
 

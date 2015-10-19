@@ -1,6 +1,7 @@
 <?php
 use yii\bootstrap\Nav;
 use yii\helpers\Url;
+use common\models\Order;
 
 ?>
 <aside class="main-sidebar">
@@ -30,8 +31,8 @@ use yii\helpers\Url;
             </div>
         </form>
         /.search form -->
-
-        <?=
+        <?php if ( Order::count() > 0 ) $order = ' ('.Order::count().')'; else $order = ''; ?>
+        <?= 
         Nav::widget(
             [
                 'encodeLabels' => false,
@@ -69,8 +70,7 @@ use yii\helpers\Url;
                             ['label' => '<span>Все разделы</span>', 'url' => ['/section/index']],
                         ],
                     ],
-                    ['label' => '<span>Параметры</span>', 'url' => ['/setting/index']],
-                    ['label' => '<span>Заявки (4)</span>', 'url' => ['/order/index']],
+                    ['label' => '<span>Заявки'.$order.'</span>', 'url' => ['/order/index']],
                     //['label' => '<i class="fa fa-dashboard"></i><span>Страницы</span>', 'url' => ['/pages/index']],
                     /*[
                         'label' => '<i class="glyphicon glyphicon-lock"></i><span>Вход на сайт</span>', //for basic
@@ -83,7 +83,7 @@ use yii\helpers\Url;
         );
         ?>
 
-        <ul class="sidebar-menu">
+        <!--<ul class="sidebar-menu">
             <li class="treeview">
                 <a href="#">
                     <span>Страницы</span><i class="fa fa-angle-left pull-right"></i>
@@ -105,7 +105,7 @@ use yii\helpers\Url;
                     </li>
                 </ul>
             </li>
-        </ul>
+        </ul>-->
 
     </section>
 

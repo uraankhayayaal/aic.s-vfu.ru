@@ -2,6 +2,9 @@
 use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
+use common\models\Order;
+use yii\widgets\ListView;
+use yii\data\ActiveDataProvider;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
@@ -22,61 +25,42 @@ use yii\bootstrap\NavBar;
             <ul class="nav navbar-nav">
 
                <!-- Messages: style can be found in dropdown.less-->
+                <?php if (Order::count() > 0) : ?>
                 <li class="dropdown messages-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="fa fa-envelope-o"></i>
-                        <span class="label label-success">4</span>
+                        <span class="label label-success"><?= Order::count() ?></span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li class="header">У вас 4 заявки на создание МИП</li>
+                        <li class="header">У вас <?= Order::count() ?> заявок</li>
                         <li>
                             <!-- inner menu: contains the actual data -->
                             <ul class="menu">
-                                <li><!-- start message -->
-                                    <a href="#">
-                                        <div class="pull-left">
-                                            <img src="<?= $directoryAsset ?>/img/user2-160x160.jpg" class="img-circle"
-                                                 alt="User Image"/>
-                                        </div>
-                                        <h4>
-                                            Андрей Борисов
-                                            <small><i class="fa fa-clock-o"></i> 5 mins</small>
-                                        </h4>
-                                        <p>+7(964)123-45-76</p>
-                                    </a>
-                                </li>
-                                <!-- end message -->
-                                <li>
-                                    <a href="#">
-                                        <div class="pull-left">
-                                            <img src="<?= $directoryAsset ?>/img/user3-128x128.jpg" class="img-circle"
-                                                 alt="user image"/>
-                                        </div>
-                                        <h4>
-                                            Сардана Гоголева
-                                            <small><i class="fa fa-clock-o"></i> 2 hours</small>
-                                        </h4>
-                                        <p>+7(964)563-44-00</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="pull-left">
-                                            <img src="<?= $directoryAsset ?>/img/user4-128x128.jpg" class="img-circle"
-                                                 alt="user image"/>
-                                        </div>
-                                        <h4>
-                                            Василий Корякин
-                                            <small><i class="fa fa-clock-o"></i> Today</small>
-                                        </h4>
-                                        <p>+7(914)876-63-26</p>
-                                    </a>
-                                </li>
+                               <?= ListView::widget([
+                                    'dataProvider' => $provider = new ActiveDataProvider([
+                                        'query' => Order::find()->where(['is_new' => 0]),
+                                        'sort'=>[
+                                            'defaultOrder'=>[
+                                                'is_new' => SORT_ASC,
+                                                'id' => SORT_DESC,
+                                            ],
+                                        ],
+                                        /*'pagination' => [
+                                            'pageSize' => 20,
+                                        ],*/
+                                    ]),
+                                    'itemOptions' => ['class' => 'item'],
+                                    'itemView' => function ($model, $key, $index, $widget) {
+                                        return $this->render('_order', ['model' => $model]);
+                                    },
+                                    'layout' => "{items}",
+                                ]) ?>
                             </ul>
                         </li>
                         <li class="footer"><a href="#">Все сообщения</a></li>
                     </ul>
                 </li>
+                <?php endif; ?>
                  <?php '
                 <li class="dropdown notifications-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">

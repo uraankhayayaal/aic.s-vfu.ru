@@ -35,12 +35,12 @@ use yii\widgets\Menu;
                                         case 'ru':            
                                             echo '  <div class="col-4 footer_contact"><p><img src="' . Yii::getAlias('@web') . '/img/address.png" width="50" alt="contact"> <span>677013, Республика Саха (Якутия), г.Якутск, ул. Кулаковского, 46</span></p></div>
                                                     <div class="col-4 footer_contact"><p><img src="' . Yii::getAlias('@web') . '/img/email.png" width="50" alt="contact"> <span>aic.svfu@mail.ru</span></p></div>
-                                                    <div class="col-4 footer_contact"><p><img src="' . Yii::getAlias('@web') . '/img/phone.png" width="50" alt="contact"> <span>8(4112)36-09-89</span></p></div>';
+                                                    <div class="col-4 footer_contact"><p><img src="' . Yii::getAlias('@web') . '/img/phone.png" width="50" alt="contact"> <span>+7(4112)36-09-89</span></p></div>';
                                             break;
                                         case 'en'://default:
                                             echo '  <div class="col-4 footer_contact"><p><img src="' . Yii::getAlias('@web') . '/img/address.png" width="50" alt="contact"> <span>677013, Republic of Sakha, Yasutsk, Kulakovskogo 46 st.</span></p></div>
                                                     <div class="col-4 footer_contact"><p><img src="' . Yii::getAlias('@web') . '/img/email.png" width="50" alt="contact"> <span>aic.svfu@mail.ru</span></p></div>
-                                                    <div class="col-4 footer_contact"><p><img src="' . Yii::getAlias('@web') . '/img/phone.png" width="50" alt="contact"> <span>8(4112)36-09-89</span></p></div>';
+                                                    <div class="col-4 footer_contact"><p><img src="' . Yii::getAlias('@web') . '/img/phone.png" width="50" alt="contact"> <span>+7(4112)36-09-89</span></p></div>';
                                             break;
                                         }
                                         ?>

@@ -22,21 +22,21 @@ $this->title = 'Who we are';
                             <table>
                              <tr><th class="mox-center"><p>Саввин Афанасий<br>Афанасьевич </p></th></tr>
                                  <tr><img src="<?= Yii::getAlias('@resource/people/10.png') ?>" width="100%" alt="WHA"></tr>
-                                 <tr><td class="mox-left"><div class="my_word"><i>"Только смелым покоряются моря"</i></div><p> Должность: Проректор по ИР и КНР, директор АИЦ</p></td></tr>
+                                 <tr><td class="mox-left"><div class="my_word"><i>"Только смелым покоряются моря"</i></div><p> Должность: Проректор СВФУ, директор</p></td></tr>
                              </table>
                         </div>
                         <div class="col-4 mox-padd-20">
                             <table>
                                  <tr><th class="mox-center"><p>Готовцев Эдуард<br>Иннокентьевич<br> </p></th></tr>
                                  <tr><img src="<?= Yii::getAlias('@resource/people/1.png') ?>" width="100%" alt="WHA"></tr>
-                                 <tr><td class="mox-left"><div class="my_word"><i>"Дорога в тысячу миль начинается с первого шага"</i></div><p>Должность: Замиститель директора АИЦ - Директор ЦМИиУП</p></td></tr>
+                                 <tr><td class="mox-left"><div class="my_word"><i>"Дорога в тысячу миль начинается с первого шага"</i></div><p>Должность: Заместитель директора - Директор ЦМИиУП</p></td></tr>
                              </table>
                         </div>
                         <div class="col-4 mox-padd-20">
                             <table>
                                  <tr><th class="mox-center"><p>Винокуров Афанасий<br>Афанасьевич </p></th></tr>
                                  <tr><img src="<?= Yii::getAlias('@resource/people/4.png') ?>" width="100%" alt="WHA"></tr>
-                                 <tr><td class="mox-left"><div class="my_word"><i>"У нас есть все, что необходимо, но это только возможность, которую еще нужно реализовать" (Хазрат Хан)</i></div><p> Должность: Замиститель директора АИЦ - Директор ЦИСиЮСИД</p></td></tr>
+                                 <tr><td class="mox-left"><div class="my_word"><i>"У нас есть все, что необходимо, но это только возможность, которую еще нужно реализовать" (Хазрат Хан)</i></div><p> Должность: Заместитель директора - Директор ЦИСиЮСИД</p></td></tr>
                              </table>
                         </div>
                     </div>  
@@ -64,7 +64,7 @@ $this->title = 'Who we are';
                             <table>
                                  <tr><th class="mox-center"><p>Саввина Айына<br>Леонидовна </p></th></tr>
                                  <tr><img src="<?= Yii::getAlias('@resource/people/13.png') ?>" width="100%" alt="WHA"></tr>
-                                 <tr><td class="mox-left"><p>Должность: Главный специалист</p></td></tr>
+                                 <tr><td class="mox-left"><div class="my_word"><i>"Каждая великая мечта начинается с мечтателя. Всегда помните, что в Вас есть сила, терпение и страсть, чтобы дотянуться до звезд и изменить мир" (Гарриет Табмен)</i></div><p>Должность: Главный специалист</p></td></tr>
                              </table>
                         </div>
                         <div class="col-4 mox-padd-20">
@@ -148,7 +148,7 @@ $this->title = 'Who we are';
                             <table>
                                  <tr><th class="mox-center"><p>Москвитин Григорий<br>Константинович</p></th></tr>
                                  <tr><img src="<?= Yii::getAlias('@resource/people/16.png') ?>" width="100%" alt="WHA"></tr>
-                                 <tr><td class="mox-left"><p>Должность: Главный специалист</p></td></tr>
+                                 <tr><td class="mox-left"><div class="my_word"><i>""</i></div><p>Должность: Главный специалист</p></td></tr>
                              </table>
                         </div>
                     </div>
@@ -186,14 +186,14 @@ $this->title = 'Who we are';
                             <table>
                                  <tr><th class="mox-center"><p>Николаев Анатолий<br>Николаевич</p></th></tr>
                                  <tr><img src="<?= Yii::getAlias('@resource/people/5.png') ?>" width="100%" alt="WHA"></tr>
-                                 <tr><td class="mox-left"><p>Должность: Директор ЦКП</p></td></tr>
+                                 <tr><td class="mox-left"><div class="my_word"><i>""</i></div><p>Должность: Директор ЦКП</p></td></tr>
                              </table>
                         </div>
                         <div class="col-4 mox-padd-20">
                             <table>
                                  <tr><th class="mox-center"><p>Флегонтов Алексей<br>Алексеевич</p></th></tr>
                                  <tr><img src="<?= Yii::getAlias('@resource/people/8.png') ?>" width="100%" alt="WHA"></tr>
-                                 <tr><td class="mox-left"><p>Должность: Главный специалист</p></td></tr>
+                                 <tr><td class="mox-left"><div class="my_word"><i>"Если ты чего-нибудь хочешь, вся Вселенная будет способствовать тому, чтобы желание твое сбылось" (Пауло Коэльо)</i></div><p>Должность: Главный специалист</p></td></tr>
                              </table>
                         </div>
                         <div class="col-4 mox-padd-20">
@@ -204,21 +204,21 @@ $this->title = 'Who we are';
 
 
                     <div class="row">
-                        <h2>Представители АИЦ в других университетах</h2>
+                        <h2>Зарубежные представители</h2>
                     </div>
                     <div class="row">
                         <div class="col-4 mox-padd-20">
                             <table>
                                  <tr><th class="mox-center"><p>Лазарева Анисия<br> Кузьминична</p></th></tr>
                                  <tr><img src="<?= Yii::getAlias('@resource/people/0.png') ?>" width="100%" alt="WHA"></tr>
-                                 <tr><td class="mox-left"><p>Университет Орегона (University of Oregon)</p></td></tr>
+                                 <tr><td class="mox-left"><p>Представитель в США</p><p>Университет Орегона (University of Oregon)</p></td></tr>
                              </table>
                         </div>
                         <div class="col-4 mox-padd-20">
                             <table>
                                  <tr><th class="mox-center"><p>Тихонова Динара<br> Адаевна</p></th></tr>
                                  <tr><img src="<?= Yii::getAlias('@resource/people/0.png') ?>" width="100%" alt="WHA"></tr>
-                                 <tr><td class="mox-left"><p>Харбинский политехнический университет (Harbin Institute of Technology)</p></td></tr>
+                                 <tr><td class="mox-left"><p>Представитель в КНР</p><p>Харбинский политехнический университет (Harbin Institute of Technology)</p></td></tr>
                              </table>
                         </div>
                         <div class="col-4 mox-padd-20">

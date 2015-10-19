@@ -15,15 +15,15 @@ use yii\web\Session;
                 // not just as 'controller' even if default action is used.
                 ['label' => 'О ЦЕНТРЕ', 'url' => ['about/index']],
                 // 'Products' menu item will be selected as long as the route is 'product/index'
-                ['label' => 'ИСТОРИЯ АИЦ', 'url' => ['about/history']],
+                ['label' => 'ИСТОРИЯ', 'url' => ['about/history']],
                 /*['label' => 'ОБ ИННОВАЦИОННОМ<br>ЦЕНТРЕ', 'url' => ['product/index'], 'items' => [
                     ['label' => 'New Arrivals', 'url' => ['product/index', 'tag' => 'new']],
                     ['label' => 'Most Popular', 'url' => ['product/index', 'tag' => 'popular']],
                 ]],*/
-                ['label' => 'КОМАНДА АИЦ', 'url' => ['about/hwa'], /*'visible' => Yii::$app->user->isGuest*/],
-                ['label' => 'ДОСТИЖЕНИЯ АИЦ', 'url' => ['about/purpose']],
-                ['label' => 'СТРУКТУРА АИЦ', 'url' => ['about/structure']],
-                ['label' => 'КОНТАКТЫ АИЦ', 'url' => ['order/create']],
+                ['label' => 'КОМАНДА', 'url' => ['about/hwa'], /*'visible' => Yii::$app->user->isGuest*/],
+                ['label' => 'ДОСТИЖЕНИЯ', 'url' => ['about/purpose']],
+                ['label' => 'СТРУКТУРА', 'url' => ['about/structure']],
+                ['label' => 'КОНТАКТЫ', 'url' => ['order/create']],
             ],
         ]);
         break;

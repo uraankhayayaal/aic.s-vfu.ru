@@ -13,8 +13,8 @@ class OrderController extends \yii\web\Controller
 		    'query' => Order::find(),
 		    'sort'=>[
 	            'defaultOrder'=>[
-	            	'is_new' => 'SORT_DESC',
-	            	'id' => 'SORT_DESC',
+	            	'is_new' => SORT_ASC,
+                    'id' => SORT_DESC,
 	            ],
 	        ],
 		    'pagination' => [
@@ -30,7 +30,8 @@ class OrderController extends \yii\web\Controller
     	$model = Order::find()->where(['id' => $id])->one();
     	$model->is_new = 1;
     	$model->save();
-        return $this->redirect('/order/index');
+        //return $this->redirect('/order/index',302);
+        $this->redirect(\Yii::$app->urlManager->createUrl("order/index"));
     }
 
 }
